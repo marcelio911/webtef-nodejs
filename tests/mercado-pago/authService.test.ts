@@ -1,7 +1,7 @@
 // tests/auth.service.test.ts
-import { AuthService } from '../../mercado-pago/services/authService';
-import { ICredentialAccessToken } from '../../mercado-pago/models/credentialsAccessToken';
-import { httpClient } from '../../utils/httpClient';
+import { AuthService } from '../../src/mercado-pago/services/authService';
+import { ICredentialAccessToken } from '../../src/mercado-pago/models/credentialsAccessToken';
+import { httpClient } from '../../src/utils/httpClient';
 
 jest.mock('../../src/utils/httpClient');
 const mockedHttpClient = httpClient as jest.Mocked<typeof httpClient>;

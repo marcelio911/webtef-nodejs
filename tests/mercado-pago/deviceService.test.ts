@@ -1,7 +1,7 @@
 // tests/mercado-pago/deviceService.test.ts
-import { DeviceService } from '../../mercado-pago/services/deviceService';
-import { DeviceMode, DeviceResult } from '../../mercado-pago/models/device';
-import { httpClient } from '../../utils/httpClient';
+import { DeviceService } from '../../src/mercado-pago/services/deviceService';
+import { DeviceMode, DeviceResult } from '../../src/mercado-pago/models/device';
+import { httpClient } from '../../src/utils/httpClient';
 
 jest.mock('../../src/utils/httpClient');
 const mockedHttpClient = httpClient as jest.Mocked<typeof httpClient>;

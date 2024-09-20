@@ -1,7 +1,7 @@
 // tests/mercado-pago/paymentService.test.ts
-import { PaymentDetail, PaymentResult, RequestBody, StatusPayment } from '../../mercado-pago/models/payment';
-import { PaymentService } from '../../mercado-pago/services/paymentService';
-import { httpClient } from '../../utils/httpClient';
+import { PaymentDetail, PaymentResult, StatusPayment } from '../../src/mercado-pago/models/payment';
+import { PaymentService } from '../../src/mercado-pago/services/paymentService';
+import { httpClient } from '../../src/utils/httpClient';
 
 jest.mock('../../src/utils/httpClient');
 const mockedHttpClient = httpClient as jest.Mocked<typeof httpClient>;

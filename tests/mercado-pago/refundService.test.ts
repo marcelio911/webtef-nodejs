@@ -1,7 +1,7 @@
 // tests/mercado-pago/refundService.test.ts
-import { RefundService } from '../../mercado-pago/services/refundService';
-import { Refund } from '../../mercado-pago/models/refund';
-import { httpClient } from '../../utils/httpClient';
+import { RefundService } from '../../src/mercado-pago/services/refundService';
+import { Refund } from '../../src/mercado-pago/models/refund';
+import { httpClient } from '../../src/utils/httpClient';
 
 jest.mock('../../src/utils/httpClient');
 const mockedHttpClient = httpClient as jest.Mocked<typeof httpClient>;
